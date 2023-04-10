@@ -1,0 +1,187 @@
+.cart__bg {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100vw;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    right: 0; top: 0;
+    z-index: 100;
+    transition: all 1s ease-in-out;
+}
+
+.cart__bg .cart__container {    
+    position: relative;
+    height: 100vh;
+    width: 600px;
+    padding: 40px 10px;    
+    background-color: white;
+}
+
+.cart__bg .cart__container .cart__heading {
+    background: none;
+    border: none;
+}
+
+.cart__bg .cart__container .cart__heading svg {
+    transition: .2s ease-in-out;
+}
+
+.cart__bg .cart__container .cart__heading svg:hover {
+    transform: scale(1.1,1.1);
+}
+
+.cart__bg .cart__container .cart__heading .heading {
+    cursor: pointer;
+}
+
+.cart__bg .cart__container .cart_num {
+    color: #2879fe;
+}
+
+.cart__bg .cart__container .empty_cart {    
+    margin: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart__bg .cart__container .empty_cart h3 {
+    font-weight: 300;
+}
+
+.cart__bg .cart__container .empty_cart a .continue_btn {
+    padding: 13px 90px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: white;
+    background-color: #2879fe;
+    transition: .4s ease-in-out;
+}
+
+.cart__bg .cart__container .empty_cart a .continue_btn:hover {
+    transform: scale(1.1);
+}
+
+.cart__bg .cart__container .align {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.cart__bg .cart__container .product__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.cart__bg .cart__container .product__container .product {
+    margin: 20px 10px;
+    display: flex;
+    width: 100%;
+}
+
+.cart__bg .cart__container .product__container .product .cart_product_img {
+    margin: 0 10px;
+    height: 120px;
+    border-radius: 8px;
+}
+
+.cart__bg .cart__container .product__container .product .item_desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.cart__bg .cart__container .product__container .product .item_desc .item_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart__bg .cart__container .product__container .product .item_desc .item_info h5 {
+    font-size: 17px;
+}
+
+.cart__bg .cart__container .product__container .product .item_desc .item_info h4 {
+    font-size: 16px;
+}
+
+.cart__bg .cart__container .product__container .product .flex-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart__bg .cart__container .product__container .product .flex-bottom .qty__desc {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.cart__bg .cart__container .product__container .product .flex-bottom .qty__desc .minus {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.cart__bg .cart__container .product__container .product .flex-bottom .qty__desc .num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart__bg .cart__container .product__container .product .flex-bottom .qty__desc .plus {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.cart__bg .cart__container .product__container .product .flex-bottom .remove-item{
+    cursor: pointer;
+    height: fit-content;
+    background: none;
+    border: none;
+}
+
+.cart__bg .cart__container .product__container .product .flex-bottom .remove-item svg{
+    font-size: 22px;
+    color: #DC0000;
+}
+
+.cart__bg .cart__container .cart__bottom {
+    margin: 20px 30px;
+}
+
+.cart__bg .cart__container .cart__bottom .total{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.cart__bg .cart__container .cart__bottom .btn__container {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.cart__bg .cart__container .cart__bottom .btn__container .check-out{
+    padding: 13px 90px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: white;
+    background-color: #2879fe;
+    transition: .4s ease-in-out;
+}
+
+.cart__bg .cart__container .cart__bottom .btn__container .check-out:hover {
+    transform: scale(1.1);
+}

@@ -1,0 +1,73 @@
+.maylike_products {
+    margin-top: 120px;
+}
+
+.maylike_products > h2 {
+    margin: 50px;
+    text-align: center;
+}
+
+.maylike_products .marquee {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.maylike_products .marquee .maylike_container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.track {
+    position: absolute;
+    will-change: transform;
+    animation: marquee 15s linear infinite;
+    width: 180%;
+}
+
+.track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+.maylike_products .marquee .maylike_container .card{
+    position: relative;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.5s ease;
+}
+
+.maylike_products .marquee .maylike_container .card .card__top {    
+    width: 100%;
+    height: 300px;
+    cursor: pointer;
+}
+
+.maylike_products .marquee .maylike_container .card .card__top img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.maylike_products .marquee .maylike_container .card .card__body {
+    width: 100%;
+    height: 100px;
+    padding: 26px 10px 12px 10px;
+}
+
+.maylike_products .marquee .maylike_container .card .card__body h2 {
+    padding: 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+}

@@ -1,0 +1,146 @@
+.view__product {
+    padding: 50px;
+}
+
+.view__product .view__product_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view__product .view__product_container .prduct__image {
+    width: 300px;
+    height: 450px;
+}
+
+.view__product .view__product_container .prduct__image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.view__product .view__product_container .product__details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 35px;
+    height: 450px;
+    width: 980px;
+}
+
+.view__product .view__product_container .product__details .movie-title {
+    margin-bottom: 5px;
+}
+
+.view__product .view__product_container .product__details .movie-title h3 {
+    font-size: 35.2px;
+    color: black;
+}
+
+.view__product .view__product_container .product__details .facts {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.view__product .view__product_container .product__details .movie-overview {
+    margin-bottom: 20px;
+}
+
+.view__product .view__product_container .product__details .movie-overview h4 {
+    margin: 10px 0;
+    font-size: 20.8px;
+    font-weight: 600;
+}
+
+.view__product .view__product_container .product__details .movie-overview p {
+    line-height: 25.2px;
+}
+
+.view__product .view__product_container .product__details .spoken-lanugages p::before {
+    content: 'Spoken languages';
+    cursor: text;
+    font-weight: bold;
+}
+
+.view__product .view__product_container .product__details .badge {
+    /* color: #2879fe; */
+}
+
+.view__product .view__product_container .product__details .qty {
+    display: flex;
+    align-items: center;    
+    gap: 15px;
+    margin: 8px;
+}
+
+.view__product .view__product_container .product__details .qty .qty__desc{
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.view__product .view__product_container .product__details .qty .qty__desc h3 {
+    margin-bottom: 5px;
+}
+
+.view__product .view__product_container .product__details .qty .qty__desc .minus{
+    display: flex;
+    align-items: center;
+    padding: 10px 13px;
+    cursor: pointer;
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.view__product .view__product_container .product__details .qty .qty__desc .num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view__product .view__product_container .product__details .qty .qty__desc .plus{
+    display: flex;
+    align-items: center;
+    padding: 10px 13px;
+    cursor: pointer;
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.view__product .view__product_container .product__details .buttons {
+    margin-top: 25px;
+    display: flex;
+    gap: 20px;    
+    width: fit-content;
+}
+
+.view__product .view__product_container .product__details .buttons .add_to_cart{
+    display: block;
+    cursor: pointer;
+    padding: 13px 45px;
+    font-weight: bold;
+    background: none;
+    border: 1px solid #2879fe;
+    color: #2879fe;
+    transition: transform 0.5s ease;
+}
+
+.view__product .view__product_container .product__details .buttons .add_to_cart:hover {
+    transform: scale(1.1,1.1);
+}
+
+.view__product .view__product_container .product__details .buttons .buy_now {
+    display: block;
+    cursor: pointer;
+    padding: 13px 45px;
+    font-weight: bold;
+    background: none;
+    border: 1px solid #2879fe;
+    color: white;
+    background-color: #2879fe;
+    transition: transform 0.5s ease;
+}
+
+.view__product .view__product_container .product__details .buttons .buy_now:hover {
+    transform: scale(1.1,1.1);
+}
